@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Raleway&display=swap');
+
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
+
+    --light-color:#1194A8;
+    --body-color:#2B5877;
+    --heading-color:#F0584A;
+    --contrast-color:#FBA922;
 }
 
 body {
@@ -13,6 +20,10 @@ body {
                         "foot foot";
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto auto 1fr auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
+    color: var(--body-color);
 }
 
 @media screen and (min-width: 25em) {
@@ -26,6 +37,22 @@ body {
 
 h1, h2, h3 {
     line-height: 1.2em;
+    font-family: 'Coming Soon', cursive;
+    color: var(--heading-color);
+}
+
+a {
+    color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--light-color);
+    text-decoration-color: var(--contrast-color);
+}
+
+footer {
+    color: var(--light-color);
 }
 
 body#about img {
