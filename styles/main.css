@@ -26,6 +26,11 @@ body {
     color: var(--body-color);
 }
 
+main {
+    background-color: #e5e5e5;
+    border-color: var(--light-color);
+}
+
 @media screen and (min-width: 25em) {
     body {
         grid-template-areas: "head head"
