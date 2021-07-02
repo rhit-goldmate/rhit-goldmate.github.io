@@ -34,16 +34,29 @@ main {
 @media screen and (min-width: 25em) {
     body {
         grid-template-areas: "head head"
-                            "nav main"
+                            "nav nav"
+                            "main main"
                             "foot foot";
         grid-template-rows: auto 1fr auto;
     }
 }
 
-h1, h2, h3 {
+h1 {
     line-height: 1.2em;
     font-family: 'Coming Soon', cursive;
     color: var(--heading-color);
+}
+
+h2 {
+    line-height: 1.2em;
+    font-family: 'Coming Soon', cursive;
+    color: var(--light-color);
+}
+
+h3 {
+    line-height: 1.2em;
+    font-family: 'Coming Soon', cursive;
+    color: var(--contrast-color);
 }
 
 a {
@@ -56,20 +69,23 @@ a:hover {
     text-decoration-color: var(--contrast-color);
 }
 
+footer > a, footer > a:hover {
+    color: var(--light-color);
+    text-decoration-color: var(--light-color);
+}
 footer {
     color: var(--light-color);
 }
 
 body#about img {
-    height: 15em;
+    height: 20em;
+    float: left;
+    padding-right: 5em;
+    padding-bottom: 5em;
 }
 
-/* body#portfolio img {
-    height: 25em;
-} */
-
 p {
-    max-width: 50em;
+    max-width: 60em;
 }
 
 body > * {
@@ -83,6 +99,9 @@ body > header {
 
 body > nav {
     grid-area: nav;
+    border-top: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--light-color);
+
 }
 
 body > nav ul {
@@ -91,12 +110,17 @@ body > nav ul {
 }
 
 body > nav ul li {
-    /* display: inline; */
-    padding-right: 1rem;
+    display: inline;
+    padding-right: 5rem;
+    justify-content: stretch;
+    font-size: 1.5rem;
 }
 
 body > main {
     grid-area: main;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 body > footer {
@@ -128,4 +152,8 @@ body#portfolio ul#portfolioItems {
 
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
+}
+
+footer, nav {
+    text-align: center;
 }
