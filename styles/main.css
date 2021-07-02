@@ -41,8 +41,28 @@ main {
     }
 }
 @media screen and (max-width: 25em) {
-    body, li {
-        font-size: 75%;
+    body {
+        font-size: 80%;
+    }
+    li > a {
+        font-size: 60%;
+    }
+    li {
+        display: inline-table;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    body {
+        font-size: 80%;
+    }
+    li > a {
+        font-size: 60%;
+    }
+    li {
+        display: inline-table;
+        padding-right: 0;
     }
 }
 
@@ -116,8 +136,7 @@ body > nav ul {
 
 body > nav ul li {
     display: inline;
-    padding-right: 5rem;
-    justify-content: stretch;
+    padding-right: 2rem;
     font-size: 1.5rem;
 }
 
