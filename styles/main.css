@@ -181,3 +181,19 @@ body#portfolio ul#portfolioItems li img {
 footer, nav {
     text-align: center;
 }
+
+.cursor {
+    display: inline-block;
+    width: 1.5px;
+    height: 1.25em;
+    background-color: var(--body-color);
+    margin-left: 0.5em;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
