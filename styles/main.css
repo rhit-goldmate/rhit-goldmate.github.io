@@ -202,3 +202,12 @@ footer, nav {
     color: var(--light-color);
     line-height: 0.25em !important;
 }
+
+
+
+
+/* .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  } */

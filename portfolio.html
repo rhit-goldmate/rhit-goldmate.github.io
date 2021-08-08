@@ -4,12 +4,15 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Taylor Goldman's Portfolio</title>
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
+        <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
+
     </head>
     <body id="portfolio">
         <!-- Your content goes here -->
@@ -65,8 +68,38 @@
                         your own images, and you can also see everyone else's images that they choose to add to the database.
                     </p>
                     <!-- <img src="images/portfolio/project5.png" alt="My Photo Bucket"/> -->
-                    <iframe src="https://goldmate-photobucket.web.app/" title="My Photo Bucket">
-                    </iframe>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <span id="tabOne5"><li id="first5" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li></span>
+                          <span id="tabTwo5"><li id="second5" data-target="#carouselExampleIndicators" data-slide-to="1"></li></span>
+                          <span id="tabThree5"><li id="third5" data-target="#carouselExampleIndicators" data-slide-to="2"></li></span>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div id="itemOne5">
+                                <div id="innerItemOne5" class="carousel-item active">
+                                    <img class="d-block w-100" src="images/portfolio/project5cover.png" alt="First slide">
+                                </div>
+                            </div>
+                            <div id="itemTwo5">
+                                <div id="innerItemTwo5" class="carousel-item">
+                                    <img class="d-block w-100" src="images/portfolio/project5-2.png" alt="Second slide">
+                                </div>
+                            </div>
+                            <div id="itemThree5">
+                                <div id="innerItemThree5" class="carousel-item">
+                                    <img class="d-block w-100" src="images/portfolio/project5-3.png" alt="Third slide">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" id="left5" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" id="right5" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 </li>
             </ul>
         </main>
