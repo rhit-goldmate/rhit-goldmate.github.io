@@ -135,5 +135,65 @@ document.querySelector("#right1").addEventListener("click", (event) => {
     document.querySelector("#tabThree1").innerHTML = `<li id="third1" data-target="#carouselExampleIndicators" data-slide-to="0">`;
   }
 });
+document.querySelector("#left2").addEventListener("click", (event) => {
+  if(document.querySelector("#innerItemOne2").classList.contains("active")) {
+    document.querySelector("#itemThree2").innerHTML = `<div id="innerItemThree2" class="carousel-item active">
+    <img class="d-block w-100" src="images/portfolio/project2-3.png" alt="Third slide">
+    </div>`;
+    document.querySelector("#itemOne2").innerHTML = `<div id="innerItemOne2" class="carousel-item">
+    <img class="d-block w-100" src="images/portfolio/project2-2.png" alt="First slide">
+    </div>`;
+    document.querySelector("#tabThree2").innerHTML = `<li id="third2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">`;
+    document.querySelector("#tabOne2").innerHTML = `<li id="first2" data-target="#carouselExampleIndicators" data-slide-to="0">`;
+  } else if(document.querySelector("#innerItemTwo2").classList.contains("active")) {
+    document.querySelector("#itemOne2").innerHTML = `<div id="innerItemOne2" class="carousel-item active">
+    <img class="d-block w-100" src="images/portfolio/project2-2.png" alt="First slide">
+    </div>`;
+    document.querySelector("#itemTwo2").innerHTML = `<div id="innerItemTwo2" class="carousel-item">
+    <img class="d-block w-100" src="images/portfolio/project2-1.png" alt="Second slide">
+    </div>`;
+    document.querySelector("#tabOne2").innerHTML = `<li id="first2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">`;
+    document.querySelector("#tabTwo2").innerHTML = `<li id="second2" data-target="#carouselExampleIndicators" data-slide-to="0">`;
+  } else {
+    document.querySelector("#itemTwo2").innerHTML = `<div id="innerItemTwo2" class="carousel-item active">
+    <img class="d-block w-100" src="images/portfolio/project2-1.png" alt="Second slide">
+    </div>`;
+    document.querySelector("#itemThree2").innerHTML = `<div id="innerItemThree2" class="carousel-item">
+    <img class="d-block w-100" src="images/portfolio/project2-3.png" alt="Third slide">
+    </div>`;
+    document.querySelector("#tabTwo2").innerHTML = `<li id="second2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">`;
+    document.querySelector("#tabThree2").innerHTML = `<li id="third2" data-target="#carouselExampleIndicators" data-slide-to="0">`;
+  }
+});
+document.querySelector("#right2").addEventListener("click", (event) => {
+  if(document.querySelector("#innerItemOne2").classList.contains("active")) {
+    document.querySelector("#itemTwo2").innerHTML = `<div id="innerItemTwo2" class="carousel-item active">
+    <img class="d-block w-100" src="images/portfolio/project2-1.png" alt="Second slide">
+    </div>`;
+    document.querySelector("#itemOne2").innerHTML = `<div id="innerItemOne2" class="carousel-item">
+    <img class="d-block w-100" src="images/portfolio/project2-2.png" alt="First slide">
+    </div>`;
+    document.querySelector("#tabTwo2").innerHTML = `<li id="second2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">`;
+    document.querySelector("#tabOne2").innerHTML = `<li id="first2" data-target="#carouselExampleIndicators" data-slide-to="0">`;
+  } else if(document.querySelector("#innerItemTwo2").classList.contains("active")) {
+    document.querySelector("#itemThree2").innerHTML = `<div id="innerItemThree2" class="carousel-item active">
+    <img class="d-block w-100" src="images/portfolio/project2-3.png" alt="Third slide">
+    </div>`;
+    document.querySelector("#itemTwo2").innerHTML = `<div id="innerItemTwo2" class="carousel-item">
+    <img class="d-block w-100" src="images/portfolio/project2-1.png" alt="Second slide">
+    </div>`;
+    document.querySelector("#tabThree2").innerHTML = `<li id="third2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">`;
+    document.querySelector("#tabTwo2").innerHTML = `<li id="second2" data-target="#carouselExampleIndicators" data-slide-to="0">`;
+  } else {
+    document.querySelector("#itemOne2").innerHTML = `<div id="innerItemOne2" class="carousel-item active">
+    <img class="d-block w-100" src="images/portfolio/project2-2.png" alt="First slide">
+    </div>`;
+    document.querySelector("#itemThree2").innerHTML = `<div id="innerItemThree2" class="carousel-item">
+    <img class="d-block w-100" src="images/portfolio/project2-3.png" alt="Third slide">
+    </div>`;
+    document.querySelector("#tabOne2").innerHTML = `<li id="first2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active">`;
+    document.querySelector("#tabThree2").innerHTML = `<li id="third2" data-target="#carouselExampleIndicators" data-slide-to="0">`;
+  }
+});
 
 
