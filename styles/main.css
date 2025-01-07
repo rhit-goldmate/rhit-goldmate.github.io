@@ -68,19 +68,19 @@ main {
 
 h1 {
     line-height: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Coming Soon', cursive;
     color: var(--heading-color);
 }
 
 h2 {
     line-height: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Coming Soon', cursive;
     color: var(--light-color);
 }
 
 h3 {
     line-height: 1.2em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Coming Soon', cursive;
     color: var(--contrast-color);
 }
 
