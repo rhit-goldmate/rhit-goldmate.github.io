@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Raleway&display=swap');
-
 :root {
     --vertical-space: 2rem;
     --horizontal-space: 3rem;
@@ -68,19 +66,19 @@ main {
 
 h1 {
     line-height: 1.2em;
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
     color: var(--heading-color);
 }
 
 h2 {
     line-height: 1.2em;
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
     color: var(--light-color);
 }
 
 h3 {
     line-height: 1.2em;
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
     color: var(--contrast-color);
 }
 
