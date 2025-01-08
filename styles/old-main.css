@@ -4,7 +4,7 @@
 
     --light-color:#7093AC;
     --body-color:#2B5877;
-    --dark-color:#062B46;
+    --heading-color:#062B46;
     --contrast-color:#BA833B;
 }
 
@@ -19,13 +19,14 @@ body {
     grid-template-columns: 1fr 4fr;
     grid-template-rows: auto auto 1fr auto;
     font-family: 'Raleway', sans-serif;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png");
     color: var(--body-color);
 }
 
-
-.bi {
-    padding-left: .2rem;
-    padding-right: .2rem;
+main {
+    background-color: #e5e5e5;
+    border-color: var(--light-color);
 }
 
 @media screen and (min-width: 25em) {
@@ -65,49 +66,38 @@ body {
 
 h1 {
     line-height: 1.2em;
-    color: var(--body-color);
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    color: var(--heading-color);
 }
 
 h2 {
     line-height: 1.2em;
-    color: var(--body-color);
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
+    color: var(--light-color);
 }
 
 h3 {
     line-height: 1.2em;
-    color: var(--body-color);
-}
-
-.name {
-    color: var(--contrast-color);
-    background-color: var(--body-color);
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     font-family: 'Courier New', 'Courier New', Courier, monospace;
-}
-
-.pdf {
-    justify-self: center;
-    width: 50em;
-    height: 60em;
-    padding-bottom: 5em;
+    color: var(--contrast-color);
 }
 
 a {
     color: var(--body-color);
+    text-decoration-color: var(--contrast-color);
 }
 
 a:hover {
-    color: var(--contrast-color);
+    color: var(--light-color);
+    text-decoration-color: var(--contrast-color);
 }
 
 footer > a, footer > a:hover {
-    color: var(--contrast-color);
+    color: var(--light-color);
+    text-decoration-color: var(--light-color);
 }
 footer {
-    color: var(--contrast-color);
-    background-color: var(--dark-color);
+    color: var(--light-color);
 }
 
 body#about img {
@@ -130,14 +120,10 @@ body > header {
     grid-area: head;
 }
 
-body > footer {
-    grid-area: foot;
-}
-
 body > nav {
     grid-area: nav;
-    /* border-top: 2px solid var(--light-color);
-    border-bottom: 2px solid var(--light-color); */
+    border-top: 2px solid var(--light-color);
+    border-bottom: 2px solid var(--light-color);
 
 }
 
@@ -198,7 +184,7 @@ footer, nav {
     display: inline-block;
     width: 0.08em;
     height: 0.75em;
-    background-color: var(--contrast-color);
+    background-color: var(--heading-color);
     margin-left: 0.25em;
     animation: blink .6s linear infinite alternate;
 }
@@ -214,3 +200,12 @@ footer, nav {
     color: var(--light-color);
     line-height: 0.25em !important;
 }
+
+
+
+
+/* .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+  } */
