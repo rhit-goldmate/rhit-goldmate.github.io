@@ -65,6 +65,7 @@ body {
 
 h1 {
     line-height: 1.2em;
+    font-family: 'Courier New', 'Courier New', Courier, monospace;
     color: var(--body-color);
 }
 
@@ -80,26 +81,28 @@ h3 {
 
 .name {
     color: var(--contrast-color);
-    background-color: var(--body-color);
     padding-left: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     font-family: 'Courier New', 'Courier New', Courier, monospace;
+}
+
+header, nav {
+    background-color: #2B5877;
 }
 
 .pdf {
     justify-self: center;
-    width: 60em;
-    height: 70em;
+    width: 45em;
+    height: 50em;
     padding-bottom: 5em;
+    padding-left: 5em;
 }
 
 a {
-    color: var(--body-color);
+    color: var(--contrast-color);
 }
 
 a:hover {
-    color: var(--contrast-color);
+    color: var(--light-color);
 }
 
 footer > a, footer > a:hover {
@@ -136,8 +139,6 @@ body > footer {
 
 body > nav {
     grid-area: nav;
-    /* border-top: 2px solid var(--light-color);
-    border-bottom: 2px solid var(--light-color); */
 
 }
 
