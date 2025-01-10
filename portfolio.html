@@ -4,7 +4,6 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Taylor Goldman's Portfolio</title>
-        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
         <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/main.css" />
@@ -13,7 +12,9 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body id="portfolio">
         <!-- Your content goes here -->
@@ -21,26 +22,28 @@
             <h1 class="name"><span id="typingEffect"></span><span class="cursor"></span></h1>
         </header>
         <!-- A grey horizontal navbar that becomes vertical on small screens -->
-        <nav class="navbar navbar-expand-sm bg-light">
+        <nav class="navbar navbar-expand-sm bg-light lato-light">
             <!-- Links -->
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-            </li>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i></a>
+                </li>
             </ul>
-        
         </nav>
         <main>
-            <h1>Portfolio</h1>
-            <ul id="portfolioItems">
+            <h1 class="lato-regular">Portfolio</h1>
+            <ul id="portfolioItems" class="lato-light">
                 <li>
-                    <h2><a href="https://huy8-reminder-app.web.app/" target="_blank">Reminder Web App</a></h2>
+                    <h2 class="lato-light"><a href="https://huy8-reminder-app.web.app/" target="_blank">Reminder Web App</a></h2>
                     <h6 class="date">Created: August 2021</h6>
                     <p>With a partner, I designed and created a web app called Reminder. We started from scratch and used HTML, CSS,
                         and JavaScript, as well as Firebase and the Firestore database for our backend. Overall, this project took 
@@ -81,7 +84,7 @@
                       </div>
                 </li>
                 <li>
-                    <h2><a href="https://goldmate-photobucket.web.app/" target="_blank">My Photo Bucket App</a></h2>
+                    <h2 class="lato-light"><a href="https://goldmate-photobucket.web.app/" target="_blank">My Photo Bucket App</a></h2>
                     <h6 class="date">Created: July 2021</h6>
                     <p>I made this app using HTML, CSS, JavaScript, and Firebase to store my data as well as to allow users to login
                         using Firebase's authentication method. You can add an image to the app once you login and can edit and delete 
@@ -121,7 +124,7 @@
                       </div>
                 </li>
                 <li>
-                    <h2><a href="#" target="_blank">Jetpac Game</a></h2>
+                    <h2 h2 class="lato-light"><a href="#" target="_blank">Jetpac Game</a></h2>
                     <h6 class="date">Created: February 2021</h6>
                     <p>With a partner, I designed and created a Java project, modeled after the game JetPac. We designed and 
                         implemented many features in the game, such as AI and multiplayer functionality. </p>
@@ -158,30 +161,6 @@
                           <span class="sr-only">Next</span>
                         </a>
                       </div>
-                </li>
-                <li>
-                    <h2><a href="https://goldmate-lightsout.web.app/" target="_blank">Linear Lights Out Game</a></h2>
-                    <h6 class="date">Created: June 2021</h6>
-                    <p>I made this game for part of my Web Programming class. You can play it on any device size and
-                        as you play the game you can see how the labels are updated every turn, and you can start a 
-                        new game as well.
-                    </p>
-                    <img src="images/portfolio/project4.png"  alt="Lights Out Game"/>
-                </li>
-                <li>
-                    <h2><a href="https://goldmate-csse280.web.app/" target="_blank">Favorite Things Site</a></h2>
-                    <h6 class="date">Created: June 2021</h6>
-                    <p>I created a simple web app using HTML, CSS, and JavaScript. This app allows you to 
-                        interact with a number of different buttons which can lead to you selecting your favorite number
-                        and favorite color.</p>
-                    <img src="images/portfolio/project3.png" alt="Favorite Things site"/>
-                </li>
-                <li>
-                    <h2><a href="#">Scene</a></h2>
-                    <h6 class="date">Created: December 2020</h6>
-                    <p>I used Java to create a simple graphics image made up of different components like a sun, a tree, 
-                        and a house. This was one of the first projects I completed in my Object-Oriented Software Development class.</p>
-                    <img src="images/portfolio/project2.png" alt="Scene using Java"/>
                 </li>
             </ul>
         </main>

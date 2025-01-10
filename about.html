@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Taylor Goldman's Portfolio</title>
+        <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
         <link rel="stylesheet" href="styles/normalize.css" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -11,6 +12,9 @@
         <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body id="about">
         <!-- Your content goes here -->
@@ -18,40 +22,41 @@
             <h1 class="name"><span id="typingEffect"></span><span class="cursor"></span></h1>
         </header>
         <!-- A grey horizontal navbar that becomes vertical on small screens -->
-        <nav class="navbar navbar-expand-sm bg-light">
+        <nav class="navbar navbar-expand-sm bg-light lato-light">
             <!-- Links -->
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="resume.html">Resume</a>
-            </li>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="bi bi-house-door-fill"></i></a>
+                </li>
             </ul>
-        
         </nav>
         <main>
-            <h1>About</h1>
-            
-            <img src="images/avatar.png" class="rounded"/>
+            <h1 class="lato-regular">About</h1>
+            <div id="about-text" class="lato-light container border">
+                <img src="images/avatar.png" class="img-thumbnail"/>
 
-            <p class="info">My name is Taylor Goldman, and I am a recent graduate of Rose-Hulman Institute of Technology with a Bachelor's in 
-                Computer Science and a minor in Cybersecurity. I am deeply passionate about computer science, particularly in 
-                cybersecurity and software development, and I enjoy creating innovative solutions based on my knowledge and experiences.
-                 In my time at Rose-Hulman, I was actively involved in the women's tennis team, the Computer Science and Software 
-                 Engineering department's peer mentoring program, and as a TA for the department, as well as 
-                 an active member of the Cybersecurity Club.</p>
-            
-            <p class="info">I recently started a position as a Cybersecurity Consultant, where I configure custom solutions for clients, 
-                ensuring their security needs are effectively met. I am also looking to dive deeper into personal projects in cybersecurity 
-                and software engineering to further hone my skills and contribute to the field. Feel free to check out some of my recent
-                projects on my portfolio page, or download my resume. My email is displayed below; please reach out
-                if you have any questions or collaboration ideas!</p>
-
+                <p class="info">My name is Taylor Goldman, and I am a recent graduate of Rose-Hulman Institute of Technology with a Bachelor's in 
+                    Computer Science and a minor in Cybersecurity. I am deeply passionate about computer science, particularly in 
+                    cybersecurity and software development, and I enjoy creating innovative solutions based on my knowledge and experiences.
+                     In my time at Rose-Hulman, I was actively involved in the women's tennis team, the Computer Science and Software 
+                     Engineering department's peer mentoring program, and as a TA for the department, as well as 
+                     an active member of the Cybersecurity Club.</p>
                 
+                <p class="info">I recently started a position as a Cybersecurity Consultant, where I configure custom solutions for clients, 
+                    ensuring their security needs are effectively met. I am also looking to dive deeper into personal projects in cybersecurity 
+                    and software engineering to further hone my skills and contribute to the field. Feel free to check out some of my recent
+                    projects on my portfolio page, or download my resume. You can contact me by clicking below; please reach out
+                    if you have any questions or collaboration ideas!</p>
+            </div>
         </main>
 
         <footer>
