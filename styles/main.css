@@ -144,12 +144,9 @@ h3 {
 }
 
 header, nav {
-    background-color: #2B5877;
+    background-color: var(--body-color);
 }
 
-nav {
-    background-color: #2B5877;
-}
 
 .nav-link {
     text-decoration: none;
