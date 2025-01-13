@@ -6,6 +6,7 @@
     --body-color:#2B5877;
     --dark-color:#062B46;
     --contrast-color:#BA833B;
+    --light-bg: #f5f8fb;
 }
 
 body {
@@ -18,6 +19,11 @@ body {
     grid-template-columns: 3fr 2fr;
     grid-template-rows: auto 2fr auto;
     color: var(--body-color);
+    background-color: var(--light-bg);
+}
+
+.card-img-top {
+    height: 10rem;
 }
 
 .lato-thin {
@@ -147,6 +153,15 @@ header, nav {
     background-color: var(--body-color);
 }
 
+.btn {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.btn:hover {
+    color: white;
+    background-color: var(--light-color);
+}
 
 .nav-link {
     text-decoration: none;

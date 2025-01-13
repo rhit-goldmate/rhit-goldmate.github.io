@@ -42,47 +42,128 @@
             </ul>
         </nav>
         <main>
-            <h1 class="lato-regular">Portfolio</h1>
-            <ul id="portfolioItems" class="lato-light">
+            <h1 class="lato-regular">Spotlight Project</h1>
+            <div class="card mb-3">
+                <img class="card-img-top" src="images/portfolio/comps.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Cybersecurity Home Lab</h5>
+                  <p class="card-text">Researched and built my own cybersecurity home lab. This includes 10 VMs equipped with many security tools capable of
+                    the following: malware analysis and reverse engineering, forensics and incident response, threat detection and SIEM management, and more. 
+                  </p>
+                  <a href="#" class="btn" target="_blank">Learn More</a>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">August 2024</small>
+                </div>
+            </div>
+            <br>
+            
+            <h2 class="lato-regular">Cybersecurity</h2>
+            <hr>
+            <div class="card-deck" style="padding-bottom: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/splunk.png">
+                    <div class="card-body">
+                      <h5 class="card-title">Splunk: Threat Detection & Reporting</h5>
+                      <p class="card-text">Used Splunk Enterprise to detect an AS-REP Roasting attack on my homelab. 
+                        Created an Active Directory
+                        dashboard to report on similar attacks in the future to improve threat detection.
+                      </p>
+                      <a href="#" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">August 2024</small>
+                      </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/as-rep.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">AS-REP Roasting Attack</h5>
+                      <p class="card-text">An offensive security mini project, performing an AS-REP Roasting attack on an
+                        Active Directory Domain Controller. Completed using my homelab's vulnerable Active Directory lab. 
+                      </p>
+                      <a href="#" class="btn" target="_blank">Learn More</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">August 2024</small>
+                      </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/project2-2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Reminder Web App</h5>
+                      <p class="card-text">Designed and developed a web app called Reminder from scratch, using HTML, CSS, and JavaScript.
+                        Hosted using Firebase and the Firestore database for the backend.
+                      </p>
+                      <a href="https://huy8-reminder-app.web.app/" class="btn" target="_blank">Visit Site</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">June - July 2021</small>
+                      </div>
+                  </div>
+              </div>
+
+              <h2 class="lato-regular">Web Development</h2>
+              <hr>
+            <div class="card-deck" style="padding-bottom: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/project2-2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Reminder Web App</h5>
+                      <p class="card-text">Designed and developed a web app called Reminder from scratch, using HTML, CSS, and JavaScript.
+                        Hosted using Firebase and the Firestore database for the backend.
+                      </p>
+                      <a href="https://huy8-reminder-app.web.app/" class="btn" target="_blank">Visit Site</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">June - July 2021</small>
+                      </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/project5.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">My Photo Bucket Web App</h5>
+                      <p class="card-text">Developed using HTML, CSS, JavaScript, and Firebase to store my data as well as to allow users to login
+                        using Firebase's authentication method. You can add an image to the app once you login and can edit and delete 
+                        your own images, and you can also see everyone else's images that they choose to add to the database.
+                      </p>
+                      <a href="https://goldmate-photobucket.web.app/" class="btn" target="_blank">Visit Site</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">July 2021</small>
+                      </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/project2-2.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Reminder Web App</h5>
+                      <p class="card-text">Designed and developed a web app called Reminder from scratch, using HTML, CSS, and JavaScript.
+                        Hosted using Firebase and the Firestore database for the backend.
+                      </p>
+                      <a href="https://huy8-reminder-app.web.app/" class="btn" target="_blank">Visit Site</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">June - July 2021</small>
+                      </div>
+                  </div>
+              </div>
+
+
+            
+            <!-- <ul id="portfolioItems" class="lato-light">
                 <li>
-                    <h2 class="lato-light"><a href="https://huy8-reminder-app.web.app/" target="_blank">Reminder Web App</a></h2>
-                    <h6 class="date">Created: August 2021</h6>
-                    <p>With a partner, I designed and created a web app called Reminder. We started from scratch and used HTML, CSS,
-                        and JavaScript, as well as Firebase and the Firestore database for our backend. Overall, this project took 
-                        us around 1 month to complete.
-                    </p>
-                    <!-- <img src="images/portfolio/project1.png" alt="JetPac game screenshot"/> -->
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <span id="tabOne2"><li id="first2" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li></span>
-                          <span id="tabTwo2"><li id="second2" data-target="#carouselExampleIndicators" data-slide-to="1"></li></span>
-                          <span id="tabThree2"><li id="third2" data-target="#carouselExampleIndicators" data-slide-to="2"></li></span>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div id="itemOne2">
-                                <div id="innerItemOne2" class="carousel-item active">
-                                    <img class="d-block w-100" src="images/portfolio/project2-2.png" alt="First slide">
-                                </div>
-                            </div>
-                            <div id="itemTwo2">
-                                <div id="innerItemTwo2" class="carousel-item">
-                                    <img class="d-block w-100" src="images/portfolio/project2-1.png" alt="Second slide">
-                                </div>
-                            </div>
-                            <div id="itemThree2">
-                                <div id="innerItemThree2" class="carousel-item">
-                                    <img class="d-block w-100" src="images/portfolio/project2-3.png" alt="Third slide">
-                                </div>
-                            </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="images/portfolio/project2-2.png" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Reminder Web App</h5>
+                          <p class="card-text">Designed and developed a web app called Reminder from scratch, using HTML, CSS, and JavaScript.
+                            Hosted using Firebase and the Firestore database for the backend.
+                          </p>
+                          <a href="https://huy8-reminder-app.web.app/" class="btn" target="_blank">Visit Site</a>
                         </div>
-                        <a class="carousel-control-prev" id="left2" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" id="right2" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
+                        <div class="card-footer">
+                            <small class="text-muted">June - July 2021</small>
+                          </div>
                       </div>
                 </li>
                 <li>
@@ -130,7 +211,6 @@
                     <h6 class="date">Created: February 2021</h6>
                     <p>With a partner, I designed and created a Java project, modeled after the game JetPac. We designed and 
                         implemented many features in the game, such as AI and multiplayer functionality. </p>
-                    <!-- <img src="images/portfolio/project1.png" alt="JetPac game screenshot"/> -->
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                           <span id="tabOne1"><li id="first1" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li></span>
@@ -164,7 +244,7 @@
                         </a>
                       </div>
                 </li>
-            </ul>
+            </ul> -->
         </main>
 
         <footer>
