@@ -26,6 +26,10 @@ body {
     height: 10rem;
 }
 
+#spotlight {
+    height: fit-content;
+}
+
 .lato-thin {
     font-family: "Lato", serif;
     font-weight: 100;
