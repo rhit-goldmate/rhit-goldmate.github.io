@@ -203,7 +203,14 @@ body#about img {
 }
 
 .jumbotron {
-    margin-top: 2em;
+    margin-top:2rem;
+    border-radius:10px;
+    background: 
+        url('../images/city-bg.png') 
+        no-repeat;
+    background-size: cover;
+    color:white !important;
+    height:fit-content;
 }
 
 #about-text {
