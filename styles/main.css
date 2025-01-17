@@ -30,6 +30,46 @@ body {
     height: fit-content;
 }
 
+.modal-body {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: medium;
+    padding: 15px;
+}
+
+.modal-body p {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+
+.modal-title {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 18px;
+}
+
+.modal-dialog {
+    max-width: 550px;
+}
+  
+.modal-content {
+border-radius: 10px;
+border: none;
+box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;  
+    border-bottom: 1px solid #ddd; 
+    padding: 12px 15px;
+}
+
 .lato-thin {
     font-family: "Lato", serif;
     font-weight: 100;
@@ -89,8 +129,6 @@ body {
     font-weight: 900;
     font-style: italic;
   }
-  
-
 
 .bi {
     padding-left: .2rem;

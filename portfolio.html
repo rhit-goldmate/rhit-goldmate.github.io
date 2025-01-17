@@ -50,43 +50,10 @@
                   <p class="card-text">Researched and built my own cybersecurity home lab. This includes 10 VMs equipped with many security tools capable of
                     the following: malware analysis and reverse engineering, forensics and incident response, threat detection and SIEM management, and more. 
                   </p>
-                  <!-- <a href="#" class="btn" target="_blank">Learn More</a> -->
                   <button type="button" class="btn" data-toggle="modal" data-target=".homelab-modal">Learn More</button>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">August 2024</small>
-                </div>
-            </div>
-            <!--Modal for homelab-->
-            <div class="modal fade homelab-modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Project Overview</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Skills Gained:</p>
-                            <ul style="color:var(--dark-color); font-size:medium;">
-                              <li>Network configuration and management</li>
-                              <li>Virtualization and environment setup</li>
-                              <li>Infrastructure and architecture design</li>
-                            </ul>
-                            <p>Project Writeup:</p>
-                            <ul style="color:var(--dark-color); font-size:medium;">
-                              <li>Blog post: <a href="https://taylorgoldman8.wordpress.com/2024/08/07/cyber-security-home-lab/">
-                                Building a Comprehensive Homelab for Defensive Security and Malware Analysis
-                              </a></li>
-                              <li>GitHub: <a href="https://github.com/rhit-goldmate/homelab">README.md</a></li>
-                            </ul>
-                          </div>
-                          <div class="modal-body text-center">
-                            <img src="images/portfolio/homelab-network-1.png" style="width:80%; justify-self:center;">
-                          </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <br>
@@ -100,7 +67,7 @@
                       <h5 class="card-title">Splunk: Threat Detection & Reporting</h5>
                       <p class="card-text">Used Splunk Enterprise to detect an AS-REP Roasting attack on my homelab. 
                         Created an Active Directory
-                        dashboard to report on similar attacks in the future to improve threat detection.
+                        dashboard to report on similar attacks in the future to improve threat detection efforts.
                       </p>
                       <a href="#" class="btn" target="_blank">Learn More</a>
                     </div>
@@ -113,9 +80,9 @@
                     <div class="card-body">
                       <h5 class="card-title">AS-REP Roasting Attack</h5>
                       <p class="card-text">An offensive security mini project, performing an AS-REP Roasting attack on an
-                        Active Directory Domain Controller. Completed using my homelab's vulnerable Active Directory lab. 
+                        Active Directory Domain Controller. Completed using my homelab's vulnerable Active Directory lab and Kali Linux. 
                       </p>
-                      <a href="#" class="btn" target="_blank">Learn More</a>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".as-rep-modal">Learn More</button>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">August 2024</small>
@@ -128,7 +95,7 @@
                       <p class="card-text">Researched and built my own cybersecurity home lab. This includes 10 VMs equipped with many security tools capable of
                         the following: malware analysis and reverse engineering, forensics and incident response, threat detection and SIEM management, and more. 
                       </p>
-                      <a href="#" class="btn" target="_blank">Learn More</a>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".homelab-modal">Learn More</button>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">August 2024</small>
@@ -182,103 +149,75 @@
                   </div>
               </div>
 
+            <!--MODALS-->
+            <!--homelab-->
+            <div class="modal fade homelab-modal" tabindex="-1" role="dialog">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Project Overview</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Skills Gained:</p>
+                          <ul>
+                            <li>Network configuration and management</li>
+                            <li>Virtualization and environment setup</li>
+                            <li>Infrastructure and architecture design</li>
+                          </ul>
+                          <p>Project Writeup:</p>
+                          <ul>
+                            <li>Blog post: <a href="https://taylorgoldman8.wordpress.com/2024/08/07/cyber-security-home-lab/" target="_blank">
+                              Building a Comprehensive Homelab
+                            </a></li>
+                            <li>GitHub: <a href="https://github.com/rhit-goldmate/homelab" target="_blank">README.md</a></li>
+                          </ul>
+                        </div>
+                        <div class="modal-body text-center">
+                          <img src="images/portfolio/homelab-network-1.png" style="width:80%;">
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--as-rep roasting-->
+          <div class="modal fade as-rep-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Project Overview</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+                    <div class="modal-body">
+                      <p>Skills Gained:</p>
+                      <ul>
+                        <li>Active Directory exploitation</li>
+                        <li>LDAP querying to enumerate users within an AD domain</li>
+                        <li>Password cracking with John The Ripper</li>
+                        <li>Kerberos Protocol vulnerability exploitation and research</li>
+                        <li>Hands-on penetration testing</li>
+                      </ul>
+                      <p>Project Writeup:</p>
+                      <ul>
+                        <li>Blog post: <a href="https://taylorgoldman8.wordpress.com/2024/08/13/how-to-perform-as-rep-roasting-attack-on-ad-lab-in-3-simple-steps/" target="_blank">
+                            How to Perform AS-REP Roasting Attack (3 Simple Steps)
+                        </a></li>
+                      </ul>
+                    </div>
+                    <div class="modal-body text-center">
+                      <!-- <img src="images/portfolio/homelab-network-1.png" style="width:80%;"> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            
-            <!-- <ul id="portfolioItems" class="lato-light">
-                <li>
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="images/portfolio/project2-2.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Reminder Web App</h5>
-                          <p class="card-text">Designed and developed a web app called Reminder from scratch, using HTML, CSS, and JavaScript.
-                            Hosted using Firebase and the Firestore database for the backend.
-                          </p>
-                          <a href="https://huy8-reminder-app.web.app/" class="btn" target="_blank">Visit Site</a>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">June - July 2021</small>
-                          </div>
-                      </div>
-                </li>
-                <li>
-                    <h2 class="lato-light"><a href="https://goldmate-photobucket.web.app/" target="_blank">My Photo Bucket App</a></h2>
-                    <h6 class="date">Created: July 2021</h6>
-                    <p>I made this app using HTML, CSS, JavaScript, and Firebase to store my data as well as to allow users to login
-                        using Firebase's authentication method. You can add an image to the app once you login and can edit and delete 
-                        your own images, and you can also see everyone else's images that they choose to add to the database.
-                    </p>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <span id="tabOne5"><li id="first5" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li></span>
-                          <span id="tabTwo5"><li id="second5" data-target="#carouselExampleIndicators" data-slide-to="1"></li></span>
-                          <span id="tabThree5"><li id="third5" data-target="#carouselExampleIndicators" data-slide-to="2"></li></span>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div id="itemOne5">
-                                <div id="innerItemOne5" class="carousel-item active">
-                                    <img class="d-block w-100" src="images/portfolio/project5cover.png" alt="First slide">
-                                </div>
-                            </div>
-                            <div id="itemTwo5">
-                                <div id="innerItemTwo5" class="carousel-item">
-                                    <img class="d-block w-100" src="images/portfolio/project5-2.png" alt="Second slide">
-                                </div>
-                            </div>
-                            <div id="itemThree5">
-                                <div id="innerItemThree5" class="carousel-item">
-                                    <img class="d-block w-100" src="images/portfolio/project5-3.png" alt="Third slide">
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" id="left5" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" id="right5" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-                </li>
-                <li>
-                    <h2 h2 class="lato-light"><a href="#" target="_blank">Jetpac Game</a></h2>
-                    <h6 class="date">Created: February 2021</h6>
-                    <p>With a partner, I designed and created a Java project, modeled after the game JetPac. We designed and 
-                        implemented many features in the game, such as AI and multiplayer functionality. </p>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <span id="tabOne1"><li id="first1" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li></span>
-                          <span id="tabTwo1"><li id="second1" data-target="#carouselExampleIndicators" data-slide-to="1"></li></span>
-                          <span id="tabThree1"><li id="third1" data-target="#carouselExampleIndicators" data-slide-to="2"></li></span>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div id="itemOne1">
-                                <div id="innerItemOne1" class="carousel-item active">
-                                    <img class="d-block w-100" src="images/portfolio/project1.png" alt="First slide">
-                                </div>
-                            </div>
-                            <div id="itemTwo1">
-                                <div id="innerItemTwo1" class="carousel-item">
-                                    <img class="d-block w-100" src="images/portfolio/project1-2.png" alt="Second slide">
-                                </div>
-                            </div>
-                            <div id="itemThree1">
-                                <div id="innerItemThree1" class="carousel-item">
-                                    <img class="d-block w-100" src="images/portfolio/project1-3.png" alt="Third slide">
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" id="left1" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" id="right1" href="#carouselExampleIndicators" role="button" data-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-                </li>
-            </ul> -->
+
         </main>
 
         <footer>
