@@ -57,19 +57,19 @@
                 </div>
             </div>
             <br>
-            
+            <!--CYBERSECURITY-->
             <h2 class="lato-regular">Cybersecurity</h2>
             <hr>
             <div class="card-deck" style="padding-bottom: 2rem;">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/portfolio/splunk.png">
+                    <img class="card-img-top" src="images/portfolio/splunk-1.png">
                     <div class="card-body">
                       <h5 class="card-title">Splunk: Threat Detection & Reporting</h5>
                       <p class="card-text">Used Splunk Enterprise to detect an AS-REP Roasting attack on my homelab. 
                         Created an Active Directory
                         dashboard to report on similar attacks in the future to improve threat detection efforts.
                       </p>
-                      <a href="#" class="btn" target="_blank">Learn More</a>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".splunk-modal">Learn More</button>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">August 2024</small>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
               </div>
-
+              <!--WEB DEVELOPMENT-->
               <h2 class="lato-regular">Web Development</h2>
               <hr>
             <div class="card-deck" style="padding-bottom: 2rem;">
@@ -113,7 +113,7 @@
                       <p class="card-text">Designed and developed my personal portfolio website. Created mainly with HTML, CSS, JavaScript, 
                         and Bootstrap, and hosted on GitHub pages. 
                       </p>
-                      <a href="#" class="btn" target="_blank">Learn More</a>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".portfolio-modal">Learn More</button>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">January 2025</small>
@@ -208,15 +208,80 @@
                         </a></li>
                       </ul>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--splunk-->
+          <div class="modal fade splunk-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Project Overview</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+                    <div class="modal-body">
+                      <p>Skills Gained:</p>
+                      <ul>
+                        <li>Threat detection using a SIEM</li>
+                        <li>Log analysis and filtering</li>
+                        <li>Visualization for threat reporting</li>
+                        <li>Splunk Search Processing Language (SPL) querying</li>
+                        <li>Active Directory security research</li>
+                      </ul>
+                      <p>Project Writeup:</p>
+                      <ul>
+                        <li>Blog post: <a href="https://taylorgoldman8.wordpress.com/2024/08/18/enhance-security-monitoring-with-splunk-as-rep-roasting-detection/" target="_blank">
+                            Security Monitoring w/ Splunk: AS-REP Roasting Detection
+                        </a></li>
+                      </ul>
+                    </div>
                     <div class="modal-body text-center">
-                      <!-- <img src="images/portfolio/homelab-network-1.png" style="width:80%;"> -->
+                      <img src="images/portfolio/splunk.png" style="width:100%;">
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
+          <!--portfolio-->
+          <div class="modal fade portfolio-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Project Overview</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  </div>
+                    <div class="modal-body">
+                      <p>Skills Gained:</p>
+                      <ul>
+                        <li>Static website development</li>
+                        <li>Effecient web page structure and design</li>
+                        <li>Utilizing frameworks to enhance styling consistency and responsiveness</li>
+                        <li>Conceptualizing and designing visually appealing layouts</li>
+                        <li>Hosting directly from a GitHub repository</li>
+                      </ul>
+                      <p>Tech Stack:</p>
+                      <ul>
+                        <li><strong>Frontend Technologies:</strong> HTML, CSS, Bootstrap, JavaScript</li>
+                        <li><strong>Hosting and Deployment:</strong> GitHub Pages</li>
+                        <li><strong>Version Control:</strong> Git</li>
+                      </ul>
+                      <p>Source Code:</p>
+                      <ul>
+                        <li>GitHub Repository: <a href="https://github.com/rhit-goldmate/rhit-goldmate.github.io" target="_blank">rhit-goldmate.github.io</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
         </main>
 
