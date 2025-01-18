@@ -150,6 +150,55 @@
                   </div>
               </div>
 
+              <!--OTHER-->
+              <h2 class="lato-regular">Other</h2>
+              <hr>
+            <div class="card-deck" style="padding-bottom: 2rem;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/jpeg-cover.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">JPEG-2000 Decoder</h5>
+                      <p class="card-text">With a group, conducted research and design for a custom JPEG2000 decoder to process high-resolution satellite imagery. 
+                        Designed a decoder pipeline with 6 stages to fully reconstruct an image, developed in C and C++ to be utilized in an API library. 
+                        Created detailed documentation to support future development.
+
+                      </p>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".jpeg-modal">Learn More</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">October 2023 - April 2024</small>
+                      </div>
+                  </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/sql-server.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Gym Management Database</h5>
+                      <p class="card-text">With a group, designed and implemented a gym management database system to efficiently manage members, trainers, 
+                        and classes. Developed using SQL for robust data handling and connected to a front-end website for a seamless UI. The system was hosted 
+                        using Node.js, ensuring secure data storage, quick retrieval, and a responsive user experience.
+                      </p>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".db-modal">Learn More</button>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">April - May 2022</small>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="images/portfolio/project5.png" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Accumulator Processor</h5>
+                      <p class="card-text">Developed using HTML, CSS, JavaScript, and Firebase to store my data as well as to allow users to login
+                        using Firebase's authentication method. You can add an image to the app once you login and can edit and delete 
+                        your own images, and you can also see everyone else's images that they choose to add to the database.
+                      </p>
+                      <a href="https://goldmate-photobucket.web.app/" class="btn" target="_blank">Visit Site</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">October - November 2021</small>
+                    </div>
+                  </div>
+              </div>
+
             <!--MODALS-->
             <!--homelab-->
             <div class="modal fade homelab-modal" tabindex="-1" role="dialog">
@@ -283,6 +332,73 @@
               </div>
             </div>
           </div>
+          <!--gym database-->
+          <div class="modal fade db-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Project Overview</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Skills Gained:</p>
+                        <ul>
+                          <li>Database design and management</li>
+                          <li>SQL proficiency in writing and optimizing queries for CRUD operations</li>
+                          <li>Frontend-backend integration from connecting the database and UI</li>
+                        </ul>
+                        <p>Project Writeup:</p>
+                        <ul>
+                          <li>Class Final Report: <a href="files/gym-database-report.pdf" download="Taylor_Goldman_Gym_Database_Report.pdf" target="_blank">
+                            Gym Management Database Report</a></li>
+                        </ul>
+                        <p>Tech Stack:</p>
+                        <ul>
+                          <li><strong>Database: </strong>SQL (MS SQL Server)</li>
+                          <li><strong>Server-Side: </strong>Node.js, Express.js</li>
+                          <li><strong>Frontend: </strong>HTML, CSS, JavaScript, Bootstrap</li>
+                          <li><strong>Version Control: </strong>Git and GitHub</li>
+                        </ul>
+                      </div>
+                      <div class="modal-body text-center">
+                        <img src="images/portfolio/gym-diagram.png" style="width:100%;">
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--jpeg 2000-->
+        <div class="modal fade jpeg-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title">Project Overview</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <p>Skills Gained:</p>
+                      <ul>
+                        <li>Technical documentation and contributing to research</li>
+                        <li>Balance research and practical development</li>
+                        <li>Designing efficient image processing pipelines</li>
+                      </ul>
+                      <p>Project Writeup:</p>
+                      <ul>
+                        <li>Senior Project Final Report: <a href="files/jpeg-2000-report.pdf" download="Taylor_Goldman_JPEG2000_Report.pdf" target="_blank">
+                          JPEG-2000 Documentation</a></li>
+                      </ul>
+                    </div>
+                    <div class="modal-body text-center">
+                      <img src="images/portfolio/jpeg2000-design.png" style="width:80%;">
+                    </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
         </main>
 
