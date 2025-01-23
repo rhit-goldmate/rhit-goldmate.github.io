@@ -229,8 +229,12 @@ a:hover {
     color: var(--light-color);
 }
 
-footer > a, footer > a:hover {
+footer > a {
     color: var(--contrast-color);
+}
+
+footer > a:hover {
+    color: var(--light-color);
 }
 
 footer {

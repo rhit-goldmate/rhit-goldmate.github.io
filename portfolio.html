@@ -184,14 +184,14 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="images/portfolio/project5.png" alt="Card image cap">
+                    <img class="card-img-top" src="images/portfolio/processor.png" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Accumulator Processor</h5>
-                      <p class="card-text">Developed using HTML, CSS, JavaScript, and Firebase to store my data as well as to allow users to login
-                        using Firebase's authentication method. You can add an image to the app once you login and can edit and delete 
-                        your own images, and you can also see everyone else's images that they choose to add to the database.
+                      <p class="card-text">With a group, designed and implemented a single-cycle accumulator-based processor from scratch using 
+                        MIPS assembly language. Developed a custom instruction set, datapath, and memory architecture to execute multiple C programs. 
+                        Simulated in Xilinx iSim and documented the design to reflect performance and implementation decisions.
                       </p>
-                      <a href="https://goldmate-photobucket.web.app/" class="btn" target="_blank">Visit Site</a>
+                      <button type="button" class="btn" data-toggle="modal" data-target=".acc-modal">Learn More</button>
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">October - November 2021</small>
@@ -399,16 +399,48 @@
               </div>
           </div>
       </div>
+      <!--accumulator processor-->
+      <div class="modal fade acc-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Project Overview</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Skills Gained:</p>
+                    <ul>
+                      <li>Processor architecture design and implementation</li>
+                      <li>Developing and optimizing custom instruction sets</li>
+                      <li>Debugging and testing hardware designs</li>
+                      <li>Verilog and MIPS assembly language programming</li>
+                      <li>Simulation and performance analysis using Xilinx iSim</li>
+                    </ul>
+                    <p>Project Writeup:</p>
+                    <ul>
+                      <li>Class Final Report: <a href="files/processor-report.pdf" download="Taylor_Goldman_Processor_Report.pdf" target="_blank">
+                        Accumulator Processor Report</a></li>
+                    </ul>
+                  </div>
+                  <div class="modal-body text-center">
+                    <img src="images/portfolio/datapath.png" style="width:100%;">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
         </main>
 
         <footer>
-            <a href="https://www.linkedin.com/in/taylorgoldman8/"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/rhit-goldmate"><i class="bi bi-github"></i></a>
-            <a href="https://taylorgoldman8.wordpress.com/"><i class="bi bi-wordpress"></i></a>
-            <a href="mailto:taylorgoldman8@gmail.com?
-            subject = subject text"><i class="bi bi-envelope-fill"></i></a>
-        </footer>
+          <a href="https://www.linkedin.com/in/taylorgoldman8/" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/rhit-goldmate" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://taylorgoldman8.wordpress.com/" target="_blank"><i class="bi bi-wordpress"></i></a>
+          <a href="mailto:taylorgoldman8@gmail.com?
+          subject = subject text" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+      </footer>
         
         <script src="scripts/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
